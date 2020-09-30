@@ -13,7 +13,6 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -21,7 +20,6 @@ using UserHandler.Querys;
 using UserHandler.Responses;
 
 namespace UserHandler.Handlers
-
 {
     public class LoginHandler : IRequestHandler<LoginQuery, LoginResult>
     {
@@ -32,7 +30,7 @@ namespace UserHandler.Handlers
         }
         public async Task<LoginResult> Handle(LoginQuery request, CancellationToken cancellationToken)
         {
-            var user = _user.Find(m => m.UserName == request.Login).FirstOrDefault();
+            var user = _user.Find(m => m.UserName == request.UserName).FirstOrDefault();
             if (user == null)
             {
                 return null;
