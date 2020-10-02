@@ -32,7 +32,8 @@ namespace UserHandler.Handlers
             _user.Add(user);
             return new RegisterResult()
             {
-
+                IsSuccess = true,
+                 UserName= user.UserName
             };
 
         }

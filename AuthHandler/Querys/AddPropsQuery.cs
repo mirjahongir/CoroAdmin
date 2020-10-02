@@ -1,5 +1,5 @@
 ﻿using MediatR;
-
+using System.Collections.Generic;
 using UserHandler.Responses;
 
 namespace UserHandler.Querys
@@ -9,6 +9,8 @@ namespace UserHandler.Querys
         public string PropsName { get; set; }
         public string Id { get; set; }
         public string Name { get; set; }
+        public string AddUserId { get; set; }
+        public List<string> Users { get; set; }
     }
     
 }

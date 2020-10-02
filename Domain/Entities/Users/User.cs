@@ -25,10 +25,12 @@ namespace Domain.Entities.Users
     {
         public string ServerId { get; set; }
         public string ServerName { get; set; }
+        public string AddUserId { get; set; }
         public DateTime DateTime { get; set; }
     }
     public class UserProject 
     {
+        public string AddUserId { get; set; }
         public string ProjectId { get; set; }
         public string ProjectName { get; set; }
         public DateTime AddDate { get; set; }

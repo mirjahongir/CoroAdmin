@@ -9,6 +9,14 @@ using Repo;
 namespace WepApiService.Controllers
 {
     [Route("api/[controller]/[action]")]
+    public class ErrorController : Controller
+    {
+        public ErrorController()
+        {
+
+        }
+    }
+    [Route("api/[controller]/[action]")]
     public class ProjectController : Controller
     {
         IMediator _mediator;

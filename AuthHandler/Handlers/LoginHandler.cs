@@ -1,13 +1,8 @@
 ﻿using Domain.Entities.Users;
-
 using Infrastructure.Persistence;
-
 using MediatR;
-
 using Microsoft.IdentityModel.Tokens;
-
 using Repo;
-
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -15,7 +10,6 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
-
 using UserHandler.Querys;
 using UserHandler.Responses;
 
