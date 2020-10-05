@@ -11,8 +11,18 @@ namespace WepApiService.Controllers
     [Route("api/[controller]/[action]")]
     public class ErrorController : Controller
     {
-        public ErrorController()
+        IRepository<Project, string> _project;
+        IMediator _mediator;
+        public ErrorController(IRepository<Project, string> project,
+        IMediator mediator)
         {
+            _project = project;
+            _mediator = mediator;
+        }
+        [HttpPost]
+        public Task AddError()
+        {
+            _project.Get()
 
         }
     }
